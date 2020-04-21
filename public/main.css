@@ -1,4 +1,5 @@
-body{
-    background:black;
-    color:white;
+.chat{
+    max-width: 600px;
+    margin: 30px auto;
+    background-origin: 1px solid black;
 }

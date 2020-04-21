@@ -1,1 +1,1 @@
-console.log("Chat Codigo");
+const socket = io()
