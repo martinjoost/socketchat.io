@@ -9,5 +9,4 @@ let actions = document.getElementById('actions');
 
 btn.addEventListener('click', function(){
     console.log("Click");
-    
 })
