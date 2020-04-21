@@ -24,7 +24,7 @@ message.addEventListener('keypress', function(){
 
 socket.on('chat:message', function(data){
     console.log("data chat:message: ",data);
-    
+    actions.innerHTML = '';
     output.innerHTML += `
                         <p>
                             <strong>
@@ -35,8 +35,6 @@ socket.on('chat:message', function(data){
                         `   
 })
 socket.on('chat:typing', function(data){
-    console.log(data);
-    
     actions.innerHTML = `
                         
                         <p><em>${data.username} is Typing..</em> </p>
