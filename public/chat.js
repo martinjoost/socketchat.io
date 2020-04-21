@@ -14,3 +14,15 @@ btn.addEventListener('click', function(){
         username: username.value,
     })
 })
+
+socket.on('chat:message', function(data){
+    console.log(data);
+    
+    // output.innerHTML = `
+    //                     <p>
+    //                         <strong>
+    //                             ${data.username}
+    //                         </strong>
+    //                     </p>
+    //                     `   
+})

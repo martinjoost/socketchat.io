@@ -22,10 +22,8 @@ const SocketIO  = require('socket.io');
 const io = SocketIO(server);
 
 io.on('connection', (socket)=>{
-    console.log("Coneaaactado", socket.id);
 
     socket.on('chat:message', (data)=>{
-        console.log(data);
-        
+        io.sockets.emit('chat:message', data)
     })
 })
